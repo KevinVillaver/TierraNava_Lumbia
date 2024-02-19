@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TierraNava Lumbia</title>
+        <script src="https://kit.fontawesome.com/95bc58494a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/TierraNavalogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">FEATURES</a></li>
+                        <li><a href="blog.html">LOCATION</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>                    
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Strategic Location</h1>
+        </section>
+
+       <!-- ----------------- blog page content ------------------  -->
+
+       <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/location.jpg" alt="certificate">
+                <h2>The Strategic Positioning Of Our Site.</h2>
+                <p>Discover the charm of Tierra Nava Lumbia, a welcoming community nestled on the tranquil F. de Lima Street in Barangay Lumbia, Cagayan De Oro City. Our project promises residents a serene living environment paired with the convenience of easy access to key landmarks and amenities.</p>
+                <br>
+                <p>Positioned strategically along F. de Lima Street in Barangay Lumbia, Tierra Nava Lumbia enjoys close proximity to various essential landmarks and attractions. Within a mere 3-minute drive, residents can reach both the Lumbia Brgy. Hall and Lumbia Elementary School, ensuring accessibility for families with school-going children. For nature enthusiasts and adventurers, the picturesque Camarahan Ridge is just a short 7-minute journey away, offering a tranquil escape into the lush greenery of the surrounding landscape. Additionally, the bustling SM Uptown, renowned for its shopping, dining, and entertainment options, is conveniently located just 15 minutes from our community.</p>
+                <br>
+                <p>At Tierra Nava Lumbia, transportation is hassle-free and convenient. Residents can easily navigate the city via motorcycle or private vehicle, with direct access to the National Highway from our location. Furthermore, Public Utility Jeepneys (PUJ) ply routes to various malls, hospitals, and schools from the National Highway, ensuring that residents have access to essential services and amenities without hassle.</p>
+                <br>
+                <p>Experience the epitome of modern living at Tierra Nava Lumbia, where convenience meets tranquility. Our thoughtfully designed residences boast a harmonious blend of comfort and functionality, featuring spacious living areas, dining & kitchen spaces, provision for two bedrooms, a well-appointed bathroom, and a convenient carport. Additionally, each home includes a dedicated service area, catering to the practical needs of daily living.</p>
+                <br>
+                <p>Beyond the comfort of your own home, Tierra Nava Lumbia offers residents a range of amenities designed to enhance their quality of life. Our gated entrance and guardhouse provide security and peace of mind for residents and their families. Meanwhile, the clubhouse and multi-purpose area serve as vibrant hubs for community gatherings, celebrations, and social events. For leisure and recreation, our parks and playground offer opportunities for outdoor activities and relaxation amidst the natural beauty of our surroundings.</p>
+                <br>
+                <p>Come and experience the comfort, convenience, and tranquility of modern living at Tierra Nava Lumbia. Join our community and embark on a journey towards your dream lifestyle.</p>
+                <br>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="comment-form">
+                        <input type="hidden" name="access_key" value="9cfddd8d-2739-4962-99e1-bf89cfa4366e">
+                        <input type="text" name="name" placeholder="Enter Name" required>
+                        <input type="email" name="email" placeholder="Enter Email" required>
+                        <textarea rows="5" name="message" placeholder="Your comment" required>                           
+                        </textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="blog-right">
+                <h3> Accessibilities</h3>
+                <div>
+                    <span>Lumbia Brgy. Hall</span>
+                    <span>3 min.</span>
+                </div>
+                <div>
+                    <span>Lumbia Elementary School</span>
+                    <span>3 min.</span>
+                </div>
+                <div>
+                    <span>Lumbia High School</span>
+                    <span>4 min.</span>
+                </div>
+                <div>
+                    <span>Lumbia Public Hospital</span>
+                    <span>4 min</span>
+                </div>
+                <div>
+                    <span>Camarahan Ridge</span>
+                    <span>7 min.</span>
+                </div>
+                <div>
+                    <span>Gaisano Uptown</span>
+                    <span>10 min.</span>
+                </div>
+                <div>
+                    <span>SM Uptown</span>
+                    <span>15 min.</span>
+                </div>
+            </div>    
+        </div>
+       </section>
+        
+
+        <!-- ---------------- Footer ---------------- -->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Your gateway to convenience in Barangay Lumbia, Cagayan De Oro City.<br> Enjoy easy access to key landmarks like the Brgy. Hall and Elementary School within minutes,<br>  with transportation options readily available for your daily needs.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p>Copyright &copy; 2024 TierraNava Lumbia. <a href="#" class="privacy-link">Privacy Policy</a>. <a href="#" class="privacy-link">Terms</a> </p>
+        </section>
+
+        <!-- --------------JavaScript for Toggle Menu------------- -->
+        
+        <Script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right ="0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px";
+            }
+            
+        </Script>
+
+    </body>
+</html>

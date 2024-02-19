@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TierraNava Lumbia</title>
+        <script src="https://kit.fontawesome.com/95bc58494a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/TierraNavalogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">FEATURES</a></li>
+                        <li><a href="blog.html">LOCATION</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>                    
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+        <!-- -------------- about us content ------------- -->
+
+        <section class="about-us">
+
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the Pride of Lumbia</h1>
+                    <p>Introducing Tierra Nava Lumbia Subdivision: Your gateway to convenience in Barangay Lumbia, Cagayan De Oro City. Enjoy easy access to key landmarks within minutes, with comfortable living spaces, amenities, and a vibrant community atmosphere.</p>
+                    <a href="contact.html" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/perspective night view.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ----------------- course -------------- -->
+
+        
+
+        
+
+        <!-- ----------------- Facilities ---------------- -->
+
+        
+
+
+        <!-- -------------testimonials-------------- -->
+
+        
+        <!-- ------------------ Call To Action -------------- -->
+
+        
+
+        <!-- ---------------- Footer ---------------- -->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Your gateway to convenience in Barangay Lumbia, Cagayan De Oro City.<br> Enjoy easy access to key landmarks like the Brgy. Hall and Elementary School within minutes,<br>  with transportation options readily available for your daily needs.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p>Copyright &copy; 2024 TierraNava Lumbia. <a href="#" class="privacy-link">Privacy Policy</a>. <a href="#" class="privacy-link">Terms</a> </p>
+        </section>
+
+        <!-- --------------JavaScript for Toggle Menu------------- -->
+        
+        <Script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right ="0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px";
+            }
+            
+        </Script>
+
+    </body>
+</html>

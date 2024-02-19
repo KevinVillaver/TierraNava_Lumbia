@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TierraNava Lumbia</title>
+        <script src="https://kit.fontawesome.com/95bc58494a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/TierraNavalogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">FEATURES</a></li>
+                        <li><a href="blog.html">LOCATION</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>                    
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Features</h1>
+        </section>
+
+        <!-- ----------------- course ------------------------  -->
+
+        <section class="course">
+            <h1>Units We Offer</h1>
+            <p>We offer various unit sizes to suit everyone's needs.</p>
+            
+            <div class="row">
+                <div class="course-col">
+                    <h3>Inner Unit</h3>
+                    <p>Inner units provide cozy spaces nestled within the heart of our community, offering a tranquil retreat from the outside world.</p>
+                </div>
+                <div class="course-col">
+                    <h3>End Unit</h3>
+                    <p>End units offer extra privacy and natural light, featuring unique layouts that maximize space and comfort.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Corner Unit</h3>
+                    <p>Corner units boast abundant natural light and panoramic views, providing a spacious and luxurious living experience with added privacy.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- --------------------- facilities -------------------  -->
+
+        <section class="facilities">
+            <h1>Our Amenities</h1>
+            <p>Enjoy play, events, meetings, and sports in these versatile recreational spaces.</p>
+            
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/Amenities.jpg" alt="">
+                    <h3>Parks and Playground</h3>
+                    <p>Outdoor spaces with greenery, walking paths, and play equipment for all ages to enjoy nature, exercise, and socialize.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/mulitpurpose hall.jpg" alt="">
+                    <h3>Multi-Purpose Hall</h3>
+                    <p>Versatile indoor venue for meetings, events, and gatherings, equipped with amenities for various activities and functions.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/Basketball court.JPG" alt="">
+                    <h3>Basketball Court</h3>
+                    <p>Dedicated area for playing basketball, featuring hoops, boundary lines, and surfaces for recreational or competitive play.</p>
+                </div> 
+            </div>       
+        </section>
+        
+
+        <!-- ---------------- Footer ---------------- -->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Your gateway to convenience in Barangay Lumbia, Cagayan De Oro City.<br> Enjoy easy access to key landmarks like the Brgy. Hall and Elementary School within minutes,<br>  with transportation options readily available for your daily needs.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p>Copyright &copy; 2024 TierraNava Lumbia. <a href="#" class="privacy-link">Privacy Policy</a>. <a href="#" class="privacy-link">Terms</a> </p>
+        </section>
+
+        <!-- --------------JavaScript for Toggle Menu------------- -->
+        
+        <Script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right ="0";
+            }
+            function hideMenu(){
+                navLinks.style.right ="-200px";
+            }
+            
+        </Script>
+
+    </body>
+</html>
