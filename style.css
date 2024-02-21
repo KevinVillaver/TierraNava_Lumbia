@@ -348,7 +348,7 @@ h3{
     flex-basis: 48%;
     padding: 30px 2px;
 }
-.about-col img{
+.about-col .video{
     width: 100%;
 }
 .about-col h1{
